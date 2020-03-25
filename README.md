@@ -1,5 +1,5 @@
 # Async Tools
-Security tools written using Python asyncio. They are fast.
+Security tools written using Python asyncio. Written for speed.
 
 ### address_resolver.py
 > Resolve a range of IP addresses
