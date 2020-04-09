@@ -2,7 +2,7 @@
 Security tools written using Python asyncio. Written for speed.
 
 ## web_requester.py
-Makes HTTP requests and gets the response code, server header, and site title. Writes results to a CSV file and the terminal.
+Makes HTTP requests and gets the response code, server header, and site title. Writes results to a CSV file and the terminal. 1,000 URLs takes ~20 seconds. Anything > ~1,500 URLs will take slightly longer on Windows.
 
 > Request individual URL(s)
 `python3 web_requester.py https://10.2.2.1:443`
