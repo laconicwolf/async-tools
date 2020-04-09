@@ -27,14 +27,14 @@ try:
     import asyncio
     import aiohttp
     import tqdm
-except ImportError as error:
-    missing_module = str(error).split(' ')[-1]
+except ImportError as e:
+    missing_module = str(e).split(' ')[-1]
     missing_modules.append(missing_module)
 
 if missing_modules:
     for m in missing_modules:
         print('[-] Missing module: {}'.format(m))
-        print('[*] Try running "pip3 install {}", or do an Internet search for installation instructions.\n'.format(m.strip("'")))
+        print('[*] Try running "python3 -m pip install {}", or do an Internet search for installation instructions.\n'.format(m.strip("'")))
     exit()
 
 
